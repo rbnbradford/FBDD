@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Bdd\Context.fs" />
+    <Compile Include="Bdd\Gherkin.fs" />
+    <Compile Include="Bdd\MakeTest.fs" />
+    <Compile Include="Bdd\ArgumentConverters.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".paket\paket.bootstrapper.exe" />
+    <Content Include=".paket\paket.exe" />
+    <Content Include=".paket\Paket.Restore.targets" />
+    <Content Include="paket.references" />
+  </ItemGroup>
+  <Import Project=".paket\Paket.Restore.targets" />
+</Project>
